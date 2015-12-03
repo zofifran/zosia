@@ -1,5 +1,5 @@
 void quicksortlomuto(int table[], int first, int last)
-{
+{ //juuulaaa
 	int i = first-1;
 	int temp, j;
 	int pivot = table[last];
