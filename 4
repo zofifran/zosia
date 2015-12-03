@@ -1,0 +1,26 @@
+void quicksortlomuto(int table[], int first, int last)
+{
+	int i = first-1;
+	int temp, j;
+	int pivot = table[last];
+	for(j=first; j<last; ++j)
+	{
+		if(table[j]<pivot)
+		{
+			++i;
+			temp = table[i];
+			table[i] = table[j];
+			table[j] = temp;
+		}
+	}
+	if(i<first)
+		{
+			temp = table[first];
+			table[first]=table[last];
+			table[last]=temp;
+			++i;
+		}
+	
+	if (first<i) quicksortlomuto(table, first, i);
+	if (last>i+2) quicksortlomuto(table, i+1, last);
+}
