@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 
 void quicksortlomuto(int table[], int first, int last) /*oh yeah*/
 
+=======
+<<<<<<< HEAD
+void quicksortlomuto(int table[], int first, int last)
+{ //juuulaaa
+=======
+void quicksortlomuto(int table[], int first, int last) /*oh yeah*/
+{
+>>>>>>> branchzosia
+>>>>>>> 94982e427682c12456fe5fef140f7f2f7b40409b
 	int i = first-1;
 	int temp, j;
 	int pivot = table[last];
